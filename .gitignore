@@ -1,0 +1,9 @@
+# PhysioNet data are downloaded with download_data.py, not committed
+data/*
+!data/README.md
+
+# Python / OS clutter
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/

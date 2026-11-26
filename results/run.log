@@ -1,0 +1,31 @@
+/sessions/rcw-01enfwnvjqupr9rr8ab3dqjw/mnt/dsp/draft_code/ecg_draft.py:219: RuntimeWarning: overflow encountered in square
+  snr_out = 10 * np.log10(np.sum(ss ** 2) / np.sum((yy - ss) ** 2))
+/sessions/rcw-01enfwnvjqupr9rr8ab3dqjw/mnt/dsp/draft_code/ecg_draft.py:219: RuntimeWarning: divide by zero encountered in log10
+  snr_out = 10 * np.log10(np.sum(ss ** 2) / np.sum((yy - ss) ** 2))
+/sessions/rcw-01enfwnvjqupr9rr8ab3dqjw/mnt/dsp/draft_code/ecg_draft.py:67: RuntimeWarning: overflow encountered in square
+  return np.sqrt(np.mean(np.square(x), axis=axis))
+/usr/local/lib/python3.10/dist-packages/numpy/lib/_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/usr/local/lib/python3.10/dist-packages/numpy/_core/_methods.py:191: RuntimeWarning: invalid value encountered in subtract
+  x = asanyarray(arr - arrmean)
+/usr/local/lib/python3.10/dist-packages/numpy/_core/_methods.py:194: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+validation segments: 60, test segments: 90
+PLI step size selected: {'lms': 0.005, 'nlms': 0.05} 2s
+  lms L=8: mu=0.001  rejected=[0.05]  4s
+  lms L=16: mu=0.001  rejected=[0.02, 0.05]  6s
+  lms L=32: mu=0.001  rejected=[0.01, 0.02, 0.05]  8s
+  lms L=64: mu=0.001  rejected=[0.01, 0.02, 0.05]  10s
+  nlms L=8: mu=None  rejected=[0.05, 0.1, 0.25, 0.5, 1.0]  11s
+  nlms L=16: mu=None  rejected=[0.05, 0.1, 0.25, 0.5, 1.0]  13s
+  nlms L=32: mu=None  rejected=[0.05, 0.1, 0.25, 0.5, 1.0]  15s
+  nlms L=64: mu=1.0  rejected=[0.05, 0.1, 0.25, 0.5]  17s
+test 0|50 19s
+test 0|60 21s
+test 6|50 23s
+test 6|60 26s
+test 12|50 28s
+test 12|60 30s
+stress tests done 34s
+extra eps test done 40s
+ALL DONE 43s
